@@ -1,8 +1,4 @@
 # LP1-UERJ
 ##Linguagem de programação
-#include <stdio.h>
-
-int main (void) {
-    printf("Ola mundo!\n");
-    return 0;
-}
+Davidson Moura, 20 anos.
+Ciencia da Computação Uerj 
