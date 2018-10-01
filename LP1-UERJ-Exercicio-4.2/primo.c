@@ -1,24 +1,21 @@
 #include <stdio.h>
 
-int primo (int c){
-	int i;
-	for (i=2;i<c;i++){
-		if(c%i==0){
-			return 0;
-			break;
-		}
-		if(i==c-1){
-			return 1;
-			break;
-		}
+int primo (int valor){
+	int i,R=1;	
+	for (i=2;i<valor;i++){
+		if (valor%i==0){
+			R=0;
+		}	
 	}
+	return R;
 }
 int main (void){
-	int d,s;
+	int d,s,r;
 	printf("Digite o valor: ");
 	scanf("%d",&d);
+    r=primo(s);
 	for (s=2;s<d;s++){
-		if (primo(s)){
+		if (r){
 			printf("%d, ",s);
 		}
 	}

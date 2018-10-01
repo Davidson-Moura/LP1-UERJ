@@ -1,31 +1,22 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main (void){
-	int a,b;
-	printf("Digite o Primeiro Valor: ");
-	scanf("%d",&a);
-	printf("Digite o Segundo Valor: ");
-	scanf("%d",&b);
-	printf("Os valores entre %d",a);
-	printf(" e %d :\n",b);
-	while(1){
-		if(b>a){
-			a+=1;
-			if(a!=b){
-				printf("%d ,",a);
-			}
-		}
-		else{
-			if(a>b){
-				b+=1;
-				printf("%d ,",b);
-			}
-			else{
-				break;
-				
-			}
-		}
+	int valor1,valor2,maior,menor,i;
+	printf("Digite o primeiro valor");
+	scanf("%d",&valor1);
+	printf("Digite o segundo valor");
+	scanf("%d",&valor2);
+	if (valor1>valor2){
+		maior=valor1;
+		menor=valor2;	
 	}
-	scanf("%d",&a);
+	else{
+		maior=valor2;
+		menor=valor1;
+	}
+	printf("valores entre %d e %d: ",menor,maior);
+	for (i=menor+1;i<maior;i++){
+		printf("%d, ",i);
+	}
 	return 0;
 }
