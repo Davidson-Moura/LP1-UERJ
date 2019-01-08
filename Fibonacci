@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+long fibo(int valor){
+    if(valor==1){
+        return 1;
+    }
+    else if(valor==2){
+        return 1;
+    }
+    else{
+        return fibo(valor-1)+fibo(valor-2);
+    }
+};
+
+int main (void){
+    for (int i=1;i<=50;i++){
+        printf("VALOR DE FIBO(%d): %d\n",i,fibo(i));
+    }
+    return 0;
+}
